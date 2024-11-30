@@ -1,3 +1,4 @@
+import './Todo.css';
 
 export default function Todo(props){
 
@@ -9,8 +10,8 @@ export default function Todo(props){
                 <p className="category">{props.category}</p>
             </div>
         </div>
-        <button>Check</button>
-        <button>X</button>
+        <button className="complete">Check</button>
+        <button className="notcomplete">X</button>
         </>
     )
 }
