@@ -1,12 +1,25 @@
-import './Form.css'
+import './Form.css';
+import { useState } from 'react';
 
-export default function Form(){
+export default function Form({addTodo}){
+    const [title, setTitle] = useState("");
+    const [category, setCategory] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(!title || !category) return;
+        addTodo(title,category);
+        setTitle("");
+        setCategory("");
+
+
+    }
 
     return(
         <div>
-             <form>
-        <input type="text" placeholder='Insira sua Tarefa' />
-        <select>
+             <form onSubmit={handleSubmit}>
+        <input type="text" placeholder='Insira sua Tarefa' onChange={(e) => setTitle(e.target.value)} />
+        <select onChange={(e) => setCategory(e.target.value)}>
             <option value="">Selecione uma categoria/option</option>
             <option value="Trabalho">Trabalho</option>
             <option value="Estudos">Estudos</option>
@@ -16,12 +29,7 @@ export default function Form(){
         <button type='submit'>Criar Tarefa</button>
       </form>
 
-      <ol>
-        <li>
-          <input type="checkbox" />
-          To Do Item 1
-        </li>
-      </ol>
+     
         </div>
     )
 }
