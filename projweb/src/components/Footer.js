@@ -1,11 +1,21 @@
 import './Footer.css';
+import { useState } from 'react';
 
-export default function Footer(){
+export default function Footer({ totalTasks, completedTasks}){
+
+
+
 
     return (
-        <div>
-            <h1>Footer</h1>
-        </div>
+        <>
+        <footer className="footer">
+            <div className="task-count">
+                <span>Total de tarefas: {totalTasks}</span>
+                <span>Concluídas: {completedTasks}</span>
+            </div>
+            
+        </footer>
+        </>
 
     );
 }

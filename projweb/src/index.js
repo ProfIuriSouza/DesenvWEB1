@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import App from './App';
-import Menu from './components/Menu';
-import Footer from './components/Footer';
+
+
 import reportWebVitals from './reportWebVitals';
+import Button from 'react-bootstrap/Button';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Menu />
+   
       <App />
-    <Footer />
+  
+    
   </React.StrictMode>
 );
 
