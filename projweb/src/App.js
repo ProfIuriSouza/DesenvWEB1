@@ -95,11 +95,11 @@ function App() {
                     </button>
                 </div>
 
-                <button type="button" className="btn btn-danger btn-lg" title='Remover Todas as tarefas' onClick={() => cleanAllTask(todolist.id)}>
+                <button type="button" className="col-md-9 btn btn-danger btn-lg" title='Remover Todas as tarefas' onClick={() => cleanAllTask(todolist.id)}>
                         <i class="bi bi-trash-fill"></i>
                 </button>
 
-                <button type="button" className="btn btn-success btn-lg" title='Realizar Todas as tarefas' onClick={() => checkAllTask(todolist.id)}>
+                <button type="button" className="col-md-9 btn btn-success btn-lg" title='Realizar Todas as tarefas' onClick={() => checkAllTask(todolist.id)}>
                 <i class="bi bi-check-square-fill"></i>
                 </button>
 
