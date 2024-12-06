@@ -78,31 +78,40 @@ function App() {
     }, []);
 
     return (
-        <div>
+        <div className='backgroud'>
             <Header/>
         <div className='container'>
             <h1 className='text-center mt-5'>To-Do List</h1>
             <div className="row g-3 justify-content-center mt-3 mb-3">
-                <div className="col-auto">
+               <div className='row'> 
+                <div className="col-7 mx-3">
                     <label for="add-task" className="visually-hidden"></label>
                     <input type="text" onChange={updateTakInput} className="form-control fw-light fst-italic d-inline-block" id="add-task" placeholder="Nome da tarefa" />
-                        <AddOptionToSelect/>                   
+                                          
                 </div>
-              
-                <div className="col-auto">
-                    <button onClick={findTask} className="btn btn-info mx-1 text-light"><i className="bi bi-search"></i></button>
+                <div className="col-4">
+                    <button onClick={findTask} className="btn btn-info mx-3 text-light"><i className="bi bi-search"></i></button>
                     <button onClick={addTask} className="btn btn-secondary text-light"><i class="bi bi-plus-square-dotted"> <span>Adicionar</span></i>
                     </button>
                 </div>
+                <AddOptionToSelect/> 
 
-                <button type="button" className="col-md-9 btn btn-danger btn-lg" title='Remover Todas as tarefas' onClick={() => cleanAllTask(todolist.id)}>
+                </div>
+
+                
+            <div className='row g-2 justify-content-center mb-3'>
+            
+                <h4 className='text-center'>Todas as tarefas</h4>
+            <button type="button" className="col-4 mx-4 btn btn-success btn-lg" title='Realizar Todas as tarefas' onClick={() => checkAllTask(todolist.id)}>
+                <i class="bi bi-check-square-fill"></i>
+                </button>
+                
+                <button type="button" className="col-4 mx-4 btn btn-danger btn-lg" title='Remover Todas as tarefas' onClick={() => cleanAllTask(todolist.id)}>
                         <i class="bi bi-trash-fill"></i>
                 </button>
 
-                <button type="button" className="col-md-9 btn btn-success btn-lg" title='Realizar Todas as tarefas' onClick={() => checkAllTask(todolist.id)}>
-                <i class="bi bi-check-square-fill"></i>
-                </button>
-
+                
+            </div>
             </div>
 
             <table className="table table-striped table-hover mt-3">
@@ -116,6 +125,7 @@ function App() {
                     <th scope="col" className="col-1 text-center">Ações</th>
                 </tr>
                 </thead>
+                <br></br>
                 <tbody>
                     {todolist.map((item, index) => {
                         return (
