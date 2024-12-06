@@ -4,6 +4,12 @@
   background-color: aliceblue;
 }
 
+.font-text{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
 .backgroud{
   background-image: url("https://media.istockphoto.com/id/898760916/pt/vetorial/to-do-list-seamless-pattern-background-business-flat-vector-illustration-checklist-task.jpg?s=612x612&w=0&k=20&c=tiQYeSs8m1dQDNPm3QTXtOANUDk01JwMWrjhtIk71jI=");
 }

@@ -78,7 +78,7 @@ function App() {
     }, []);
 
     return (
-        <div className='backgroud'>
+        <div className='backgroud font-text'>
             <Header/>
         <div className='container'>
             <h1 className='text-center mt-5'>To-Do List</h1>
