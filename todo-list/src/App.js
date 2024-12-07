@@ -59,12 +59,12 @@ function App() {
             <h1 className='text-center mt-5'>To-Do List</h1>
             <div className="row g-3 justify-content-center mt-3 mb-3">
                 <div className="col-auto">
-                    <label for="add-task" className="visually-hidden"></label>
+                    <label htmlFor="add-task" className="visually-hidden"></label>
                     <input type="text" onChange={updateTakInput} className="form-control" id="add-task" placeholder="Nome da tarefa" />
                 </div>
                 <div className="col-auto">
                     <button onClick={findTask} className="btn btn-info mx-1"><i className="bi bi-search"></i></button>
-                    <button onClick={addTask} className="btn btn-warning"><i class="bi bi-plus-square-dotted"> <span>Adicionar</span></i>
+                    <button onClick={addTask} className="btn btn-warning"><i className="bi bi-plus-square-dotted"> <span>Adicionar</span></i>
                     </button>
                 </div>
             </div>
@@ -73,7 +73,7 @@ function App() {
                 <thead>
                 <tr>
                     <th scope="col" className="col-1 text-center">
-                        <i class="bi bi-check2-square"></i>
+                        <i className="bi bi-check2-square"></i>
                     </th>
                     <th scope="col" className="col-6">Nome da Tarefa</th>
                     <th scope="col" className="col-1 text-center">Ações</th>
@@ -93,7 +93,7 @@ function App() {
                                 }</td>
                                 <td className='text-center'>
                                     <button className="btn btn-danger" title='Remover tarefa' onClick={() => removeTask(index)}>
-                                    <i class="bi bi-trash-fill"></i>
+                                    <i className="bi bi-trash-fill"></i>
                                     </button>
                                 </td>
                             </tr>
