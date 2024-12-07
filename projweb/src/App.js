@@ -4,6 +4,7 @@ import React, {useRef, useState, useEffect} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PomodoroTimer from './components/PomodoroTimer';
+import tomato from './tomato.png';
 
 function App() {
     const taskInput = useRef('');
@@ -94,7 +95,8 @@ function App() {
         <div className='backgroud font-text'>
             <Header isLogged={isLogged} setIsLogged={setIsLogged} />
             <div className='container mb-4'>
-                <h1 className='text-center mt-5'>To-Do List</h1>
+                <h1 className='text-center mt-5'>TaskTomato <img src={tomato}/></h1>
+                
                 <div className="row g-3 justify-content-center mt-3 mb-3">
                 <div className='row'>
                     <div className="col-7 mx-3">
