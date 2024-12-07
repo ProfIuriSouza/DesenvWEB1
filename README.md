@@ -17,4 +17,4 @@ https://www.figma.com/design/X5QkgL9UtE17tg2zPuahEi/DesenvWEB1?node-id=0-1&t=pi1
 7. Entrar na conta de usuário
 8. Limpar todas as tarefas
 9. Filtar tarefas por status
-10. Exportar tarefas
+10. Timer do Pomodoro
