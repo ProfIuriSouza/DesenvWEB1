@@ -2,6 +2,7 @@
   max-width: 700px;
   border: 2px solid gray;
   background-color: aliceblue;
+  padding-bottom: 4rem;
 }
 
 .font-text{
@@ -12,6 +13,8 @@
 
 .backgroud{
   background-image: url("https://media.istockphoto.com/id/898760916/pt/vetorial/to-do-list-seamless-pattern-background-business-flat-vector-illustration-checklist-task.jpg?s=612x612&w=0&k=20&c=tiQYeSs8m1dQDNPm3QTXtOANUDk01JwMWrjhtIk71jI=");
+  position: relative;
+  min-height: 100vh;
 }
 
 button{
@@ -36,3 +39,4 @@ select option[value=""] {
     color: #999;
     font-style: italic;
   }
+  

@@ -43,7 +43,7 @@ export default function AddOptionToSelect() {
 
       <div className='row col-9 px-3 mx-1 my-1 justify-content-center'>
       <select className=" mx-1 form-control fw-light fst-italic d-inline-block col-auto">
-          <option value="" disabled selected>Selecione...</option>
+          <option value="" defaultValue={""}>Selecione...</option>
         {options.map((option, index) => (
           <option key={index} value={option}>
             {option}
