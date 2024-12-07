@@ -12,9 +12,9 @@ https://www.figma.com/design/X5QkgL9UtE17tg2zPuahEi/DesenvWEB1?node-id=0-1&t=pi1
 2. Adicionar tarefas
 3. Remover tarefas
 4. Atualizar status da tarefa
-5. Procurar tarefa
-6. Entrar na conta de usuário
-7. Persistir dados de usuário
+5. Procurar tarefa por nome
+6. Procurar tarefas por categoria
+7. Entrar na conta de usuário
 8. Limpar todas as tarefas
 9. Filtar tarefas por status
 10. Exportar tarefas
